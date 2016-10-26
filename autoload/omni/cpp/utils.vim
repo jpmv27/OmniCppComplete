@@ -515,6 +515,8 @@ function! omni#cpp#utils#ExtractTypeInfoFromTokens(tokens)
                 elseif token.kind == 'cppWord'
                     let szResult = token.value.szResult
                     let state=2
+                elseif token.kind == 'cppKeyword' && index(['const', 'volatile'], token.value)>=0
+                    continue
                 elseif index(['*', '&'], token.value)<0
                     break
                 endif
