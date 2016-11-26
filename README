@@ -1,3 +1,13 @@
+This is a FORK of https://github.com/vim-scripts/OmniCppComplete
+
+Changes:
+
+- Skip over 'const' or 'volatile' while extracting type info from parameter
+
+Changes are licensed under the same terms as the original
+
+# Original README
+
 This is a mirror of http://www.vim.org/scripts/script.php?script_id=1520
 
 This script is for vim 7.0 or higher it provides an omnifunc cppcomplete function.
